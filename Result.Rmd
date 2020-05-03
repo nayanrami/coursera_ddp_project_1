@@ -1,0 +1,19 @@
+---
+title: "R Markdown and Leaflet"
+author: "Nayan Mali"
+date: ' 04-05-2020'
+---
+
+
+## Assignment:
+
+
+```{r}
+library(leaflet)
+```
+
+```{r}
+m_map <- leaflet() %>% addTiles()   
+m_map <- m_map %>% addMarkers(lat= 22.2412, lng= 73.0856, popup="Padra Developers Home")
+m_map  
+```
